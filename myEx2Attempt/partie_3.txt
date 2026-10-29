@@ -1,0 +1,15 @@
+def main():
+    if len(sys.argv) != 2:
+        print("Usage: python script_secret.py [chemin_démarrage]")
+        sys.exit(1)
+
+    start_path = sys.argv[1]
+    files = find_files(start_path, ".pdf")
+    print(f"Fichiers trouvés avec l'extension .pdf dans {start_path}:")
+
+    for file in files:
+        file_hash = calculate_file_hash(file)
+        print(f"{file}: {file_hash}")
+
+if __name__ == "__main__":
+    main()
