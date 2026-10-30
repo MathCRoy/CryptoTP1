@@ -53,7 +53,7 @@ public class Exercice1 {
             { 'S', 'U', 'V', 'X', 'Z' }
     };
 
-    public static void main(String[] args) {
+    public static void run() {
         new Exercice1().dechiffrementDecalage();
         System.out.println();
         System.out.println("==============================");
